@@ -17,16 +17,29 @@ Also create an empty folder name evalout in the base folder.
 The training script and the PPD discriminator will be uploaded soon.
 
 Code structure:
-
+Dataloader:
 patch_util.py - code for croping 3D patches out of complete 3D volume
-MRIDataset.py/MRIDatasetEval.py - the Pytorch dataloader for training/evaluating the model. Used to load the HumanConnectome T1 data. 
+
+MRIDataset.py, MRIDatasetEval.py - the Pytorch dataloader for training/evaluating the model. Used to load the HumanConnectome T1 data. 
+
 masking.py - code for creating rough mask out of T1 MRI volume
 
+Model:
 RRDB_options.py - load the basic config
+
 RRDB_block.py - define basic MRDB block
+
 RRDB_Generator.py - define the full MRDB model
 
+Evaluation script:
 evaluate.py - evaluation script used to run the evaluation example
+
+Training script:
+train.py - the overall training script. 
+
+
+
+
 
 
 
